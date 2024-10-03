@@ -1,0 +1,49 @@
+body {
+  background-color: #fafafa;
+  font-family: 'Avenir', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-bg-dark {
+  background: #444;
+}
+
+.text-light {
+  color: #fff;
+}
+
+.text-header-color-1 {
+  color: #44958c;
+}
+
+.button-primary-1 {
+  background-color: #44958c;
+  color: white;
+}
+
+.button-primary-1:hover {
+  background-color: #35736c;
+  color: white;
+}
+
+
+.text-header-color-2 {
+  color: #fbb700;
+}
+
+.button-primary-2 {
+  background-color: #fbb700;
+  color: #000;
+}
+
+.button-primary-2:hover {
+  background-color: #d49c00;
+  color: #000;
+}
+
+.font-console {
+  font-family: "Inconsolata", monospace;
+}
