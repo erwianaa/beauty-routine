@@ -63,7 +63,7 @@ function CreatePage({onRoutineSave}) {
 			productName: '',
 			stepDescription: '',
 			duration: '',
-			imageUrl: 'https://placehold.co/100x100'
+			imageUrl: ''
 		});
 		setIsEditing(false);
 	};

@@ -2,20 +2,20 @@ import Step from '../Components/Step';
 
 function ShowPage({routine}) {
     const steps = routine.steps.map(step =>  <Step step={step}/>);
-    const products = routine.steps.map(step => <li>{step.productName}</li>)
+    const products = routine.steps.map(step => <li>{step.productName}</li>);
 
     return (
         <div className="bg-pattern">
             <div className="container container-bg">
                 <div className="row justify-content-center align-items-center">
-                    <img src="https://placehold.co/1200x450" alt="result image" className="img-fluid col-12 mb-4"/>
+                    <img src={routine.resultImageUrl} alt="result image" className="img-fluid col-12 mb-4"/>
                 </div>
 
 
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-6 text-start mb-5">
-                        <h1 className="fw-bold text-header-color-1">Rutinitas Makeup Sekolah</h1>
-                        <h3 className="fw-normal font-console">Rutinitas makeup sederhana untuk tampilan natural di sekolah.</h3>
+                        <h1 className="fw-bold text-header-color-1">{routine.name}</h1>
+                        <h3 className="fw-normal font-console">{routine.description}</h3>
                     </div>
                 </div>
 

@@ -7,6 +7,7 @@ function initializeRoutine() {
 		  "id": "1",
 		  "name": "Rutinitas Makeup Sekolah (Example Routine)",
 		  "description": "Rutinitas makeup sederhana untuk tampilan natural di sekolah, cocok untuk semua remaja yang ingin tampil segar dan percaya diri.",
+		  "resultImageUrl": "https://plus.unsplash.com/premium_photo-1716830745910-f7d5435bfc6a?q=80&w=1200&h=450&auto=format&fit=crop", 
 		  "steps": [
 			{
 			  "id": "1",
