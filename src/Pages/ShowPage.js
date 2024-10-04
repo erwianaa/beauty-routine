@@ -5,50 +5,50 @@ function ShowPage({routine}) {
     const products = routine.steps.map(step => <li>{step.productName}</li>)
 
     return (
-        <div className="container">
-            <div className="row justify-content-center align-items-center">
-                <div className="col-12 mb-4">
-                    <img src="https://placehold.co/1200x450" alt="result image" className="img-fluid"/>
+        <div className="bg-pattern">
+            <div className="container container-bg">
+                <div className="row justify-content-center align-items-center">
+                    <img src="https://placehold.co/1200x450" alt="result image" className="img-fluid col-12 mb-4"/>
                 </div>
-            </div>
 
 
-            <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-6 text-start mb-5">
-                    <h1 className="fw-bold text-header-color-1">Rutinitas Makeup Sekolah</h1>
-                    <h3 className="fw-normal font-console">Rutinitas makeup sederhana untuk tampilan natural di sekolah.</h3>
-                </div>
-            </div>
-
-
-            <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-8 order-sm-2 order-md-2 order-lg-1">
-                    <div className="row">
-                        <div className="col-12">
-                            <h4 className="fw-bold">Steps</h4>
-                        </div>
-
-                        <div className="col-12">
-                            <ol className="mt-3">
-                                {steps}
-                            </ol>
-                        </div>
+                <div className="row">
+                    <div className="col-sm-12 col-md-12 col-lg-6 text-start mb-5">
+                        <h1 className="fw-bold text-header-color-1">Rutinitas Makeup Sekolah</h1>
+                        <h3 className="fw-normal font-console">Rutinitas makeup sederhana untuk tampilan natural di sekolah.</h3>
                     </div>
                 </div>
 
 
-                <div className="col-sm-12 col-md-12 col-lg-4 order-sm-1 order-md-1 order-lg-2 mb-5">
-                    <div className="row align-items-end justify-content-end">
-                        <div className="col-12">
-                            <h4 className="fw-bold">Products</h4>
-                            <ol className="font-console">
-                                {products}
-                            </ol>
+                <div className="row">
+                    <div className="col-sm-12 col-md-12 col-lg-8 order-sm-2 order-md-2 order-lg-1">
+                        <div className="row">
+                            <div className="col-12">
+                                <h4 className="fw-bold">Steps</h4>
+                            </div>
+
+                            <div className="col-12">
+                                <ol className="mt-3">
+                                    {steps}
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="col-sm-12 col-md-12 col-lg-4 order-sm-1 order-md-1 order-lg-2 mb-5">
+                        <div className="row align-items-end justify-content-end">
+                            <div className="col-12">
+                                <h4 className="fw-bold">Products</h4>
+                                <ol className="font-console">
+                                    {products}
+                                </ol>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-	    </div>
+        </div>
     )
 }
 

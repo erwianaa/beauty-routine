@@ -17,10 +17,6 @@ function CreatePage({onRoutineSave}) {
 	const [isEditing, setIsEditing] = useState(false);
 
 
-    const validateUrl = (url) => {
-		return url.startsWith('http://') || url.startsWith('https://');
-	};
-
 	const handleRoutineChange = (e) => {
 		const { name, value } = e.target;
 		setRoutine((prevRoutine) => ({
@@ -153,7 +149,7 @@ function CreatePage({onRoutineSave}) {
                                                     <p>{step.stepDescription}</p>
                                                     <strong>{step.imageUrl}</strong>
 													<button type="button" className="btn btn-warning btn-sm mx-2" onClick={() => handleEditStep(step)}>Edit</button>
-													<button type="button" className="btn btn-danger btn-sm" onClick={() => handleRemoveStep(step.id)}>Hapus</button>
+													<button type="button" className="btn btn-danger btn-sm" onClick={() => handleRemoveStep(step.id)}>Remove</button>
 												</li>
 											))}
 										</ol>

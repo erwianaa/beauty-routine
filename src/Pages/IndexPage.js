@@ -13,16 +13,18 @@ function IndexPage({onRoutineClick}) {
     const routines = Api.getRoutines().map(routine => {
         return (
             <>
-                <a href="#" onClick={() => onRoutineClick(routine)} className="text-header-color-1" key={routine.id}>
-                    <li>{routine.name}</li>
-                </a>
+                <li>
+                    <a href="#" onClick={() => onRoutineClick(routine)} className="text-header-color-1" key={routine.id}>
+                        <h4>{routine.name}</h4>
+                    </a>
+                </li>
             </>
         )
     });
 
     return (
-        <div className="d-flex justify-content-center align-items-center flex-column mb-5">
-            <h2 className="fw-bold">Routine List's</h2>
+        <div className="d-flex justify-content-center align-items-center flex-column mb-5 index-page">
+            <h1 className="fw-bold mb-5">Routine List's</h1>
             <ul className="mb-5">
                 {routines}
             </ul>

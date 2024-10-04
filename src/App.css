@@ -1,10 +1,20 @@
 body {
-  background-color: #fafafa;
   font-family: 'Avenir', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+
+.bg-pattern {
+  background-image: url("Assets/palm-leaf.png");
+}
+
+.container-bg {
+  background-color: #fff !important;
+  border-radius: 10px;
+  border: 1px solid #444;
 }
 
 .navbar-bg-dark {
